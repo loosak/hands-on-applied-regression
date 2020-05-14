@@ -14,7 +14,7 @@
 # ---
 
 # +
-# # %matplotlib inline
+# %matplotlib inline
 from io import StringIO
 import zipfile
 
@@ -234,10 +234,10 @@ lr.score(auto_X_test, auto_y_test)
 
 metrics.r2_score(auto_y_test, lr.predict(auto_X_test))
 
-# average error (but can't indicate direction of error)
+# average squared error (but can't indicate direction of error)
+# penalizes large errors
 metrics.mean_squared_error(auto_y_test, lr.predict(auto_X_test))
 
-# penalizes large errors
 metrics.mean_absolute_error(auto_y_test, lr.predict(auto_X_test))
 
 dt = tree.DecisionTreeRegressor(max_depth=4)
