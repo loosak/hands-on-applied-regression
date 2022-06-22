@@ -1,7 +1,7 @@
 shap==0.35.0
 matplotlib==3.2.1
 notebook==6.0.3
-numpy==1.18.4
+numpy==1.22.0
 pandas==1.0.3
 xgbfir==0.3.1
 xgboost==1.0.2
